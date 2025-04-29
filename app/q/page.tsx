@@ -17,8 +17,7 @@ type user ={
 
 export default function Home() {
   const [word, setWord] =useState<user[]>([])
-    const [loding, setLoding] = useState(true)
-    const [name, setName] = useState("")
+  const [loding, setLoding] = useState(true)
     const[nam, setNam] = useState(" ")
     
     const searchpara = useSearchParams();
@@ -76,7 +75,7 @@ export default function Home() {
 <div className="md:ml-16 md:mr-16 md:mt-6 md:columns-10 bg-neutral-100 shadow-lg inset-shadow-2xs ml-4 mr-4 mt-3 columns-4  "> <ul>
     <span className="font-bold m-2">Mo disponib:</span>
         {word.map((user) => (
-        <li key={user.id} onClick={(b)=>setName(user.word)}>
+        <li key={user.id}>
           <button>
           {user.word}
           </button> 
