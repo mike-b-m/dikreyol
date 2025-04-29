@@ -18,7 +18,7 @@ type user ={
 export default function Home() {
   const [word, setWord] =useState<user[]>([])
   const [loding, setLoding] = useState(true)
-  
+  const [nam ,setNam] = useState("")
     
     const searchpara = useSearchParams();
     const search = searchpara.get('search') || '';
@@ -43,10 +43,10 @@ export default function Home() {
        <form method="get" className="md:m-4 shadow-md bg-sky-200 pl-3 rounded-2xl">
         
         <label>
-        <input type='text' name="search" placeholder="Mete mo a!" className="rounded-l-2xl placeholder:italic placeholder:text-center focus:outline-none focus:pl-4" />
+        <input type='text' name="search" placeholder="Mete mo a!" className="rounded-l-2xl placeholder:italic placeholder:text-center focus:outline-none focus:pl-4" onChange={(e) =>setNam(e.target.value)}/>
         <button type="submit" className=" rounded-r-2xl place-items-center pt-1 hover:text-blue-500" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" className="size-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-</svg></button>
+</svg></button>{nam}
         </label>
         
     </form>
