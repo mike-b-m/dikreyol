@@ -40,7 +40,7 @@ function Home() {
     <div className=""> 
     <div className="place-items-center  text-2xl  lg:mr-16 lg:ml-16 ml-4 mr-4 bg-neutral-100 col-span-1,50 shadow-lg">
 
-       <form method="get" className="lg:m-4 shadow-md bg-sky-200 pl-3 rounded-2xl">
+       <form method="get" className="xl:m-4 shadow-md bg-sky-200 xl:pl-3 rounded-2xl">
         
         <label>
         <input type='text' name="search" placeholder="Mete mo a!" className="rounded-l-2xl placeholder:italic placeholder:text-center focus:outline-none focus:pl-4" onChange={(e) =>setNam(e.target.value)}/>
