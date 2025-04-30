@@ -1,6 +1,6 @@
 'use client'
 
-import {useEffect, useState} from "react";
+import {Suspense, useEffect, useState} from "react";
 import {supabase} from "./db";
 import { useSearchParams } from "next/navigation.js";
 
@@ -15,7 +15,7 @@ type user ={
 
 }
 
-export default function Home() {
+function Home() {
   const [word, setWord] =useState<user[]>([])
   const [loding, setLoding] = useState(true)
   const [nam ,setNam] = useState("")
@@ -85,4 +85,11 @@ export default function Home() {
 
     </div>
   );
+}
+export default function Page(){
+  return(
+    <Suspense>
+      <Home/>
+    </Suspense>
+  )
 }
