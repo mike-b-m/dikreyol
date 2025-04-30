@@ -38,12 +38,12 @@ function Home() {
   return (
 
     <div className=""> 
-    <div className="place-items-center  text-2xl  lg:mr-16 lg:ml-16 ml-4 mr-4 bg-neutral-100 col-span-1,50 shadow-lg">
+    <div className="place-items-center text-2xl  xl:mr16 xl:ml-16 ml-4 mr-4 bg-neutral-100 col-span-1,50 shadow-lg">
 
-       <form method="get" className="xl:m-4 shadow-md bg-sky-200 xl:pl-3 rounded-2xl">
+       <form method="get" className="xl:m-4 text-xl w-60 shadow-md bg-sky-200 xl:pl-3 rounded-2xl">
         
         <label>
-        <input type='text' name="search" placeholder="Mete mo a!" className="rounded-l-2xl placeholder:italic placeholder:text-center focus:outline-none focus:pl-4" onChange={(e) =>setNam(e.target.value)}/>
+        <input type='text' name="search" placeholder="Mete mo a!" className="rounded-l-2xl w-50 placeholder:italic placeholder:text-center focus:outline-none focus:pl-4" onChange={(e) =>setNam(e.target.value)}/>
         <button type="submit" className=" rounded-r-2xl place-items-center pt-1 hover:text-blue-500" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" className="size-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
 </svg></button>
