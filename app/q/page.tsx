@@ -38,9 +38,9 @@ function Home() {
   return (
 
     <div className=""> 
-    <div className="place-items-center  text-2xl  md:mr-16 md:ml-16 ml-4 mr-4 bg-neutral-100 col-span-1,50 shadow-lg">
+    <div className="place-items-center  text-2xl  lg:mr-16 lg:ml-16 ml-4 mr-4 bg-neutral-100 col-span-1,50 shadow-lg">
 
-       <form method="get" className="md:m-4 shadow-md bg-sky-200 pl-3 rounded-2xl">
+       <form method="get" className="lg:m-4 shadow-md bg-sky-200 pl-3 rounded-2xl">
         
         <label>
         <input type='text' name="search" placeholder="Mete mo a!" className="rounded-l-2xl placeholder:italic placeholder:text-center focus:outline-none focus:pl-4" onChange={(e) =>setNam(e.target.value)}/>
@@ -72,7 +72,7 @@ function Home() {
 
   </div>
 
-<div className="md:ml-16 md:mr-16 md:mt-6 md:columns-10 bg-neutral-100 shadow-lg inset-shadow-2xs ml-4 mr-4 mt-3 columns-4  "> <ul>
+<div className="lg:ml-16 lg:mr-16 lg:mt-6 lg:columns-10 bg-neutral-100 shadow-lg inset-shadow-2xs ml-4 mr-4 mt-3 columns-4  "> <ul>
     <span className="font-bold m-2">Mo disponib:</span>
         {word.map((user) => (
         <li key={user.id}>
