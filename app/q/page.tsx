@@ -51,7 +51,7 @@ function Home() {
     </form>
     </div> 
 
-    <div className="place-items-center w-150 text-2xl  xl:ml-1 ml-1">
+    <div className=" w-150 text-2xl  xl:ml-1 ml-1">
    
     <div className={nam}>
     <div style={{ padding: 20 }}>
