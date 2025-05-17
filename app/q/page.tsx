@@ -37,32 +37,40 @@ function Home() {
           
   return (
 
-    <div className=""> 
-    <div className="place-items-center text-2xl  xl:mr16 xl:ml-16 ml-4 mr-4 bg-neutral-100 col-span-1,50 shadow-lg">
-
-       <form method="get" className="xl:m-4 text-xl w-60 shadow-md bg-sky-200 xl:pl-3 rounded-2xl">
-        
+    <div className="">
+      <div className="place-items-center"> 
+      
+        <form method="get" className="xl:m-4 text-xl xl:w-100 w-60 shadow-md bg-clo xl:pl-3 rounded-2xl">
         <label>
-        <input type='text' name="search" placeholder="Mete mo a!" className="rounded-l-2xl w-50 placeholder:italic placeholder:text-center focus:outline-none focus:pl-4" onChange={(e) =>setNam(e.target.value)}/>
+        <input type='text' name="search" placeholder="Mete mo a!" className="rounded-l-2xl xl:w-90 w-50 placeholder:italic placeholder:text-center focus:outline-none focus:pl-4" onChange={(e) =>setNam(e.target.value)}/>
         <button type="submit" className=" rounded-r-2xl place-items-center pt-1 hover:text-blue-500" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" className="size-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
 </svg></button>
         </label>
         
     </form>
+    </div> 
+
+    <div className="place-items-center w-150 text-2xl  xl:ml-1 ml-1">
+   
     <div className={nam}>
     <div style={{ padding: 20 }}>
-    <h1 className="font-bold text-center md:text-6xl">Diksyonè kreyol</h1>
+    
 
     {loding ? (
       <p>Loding...</p>
     ) : (
-      <ul className="md:pr-50 md:pl-50 md:text-lg text-sm">
+      <ul className=" md:pl-10 md:text-lg text-sm">
         {fil.map((user) => (
           <li key={user.id}>
-            <span className="font-bold">{user.word}:</span>  {user.def}
-            <div className="mt-3"><span className="font-bold">Sinonim:</span> {user.sino}</div> 
-           <div className="mt-3"> <span className="font-bold">Kont: </span>{user.kont}</div> 
+            <div className="font-bold bg-clo pl-2 mb-4">{user.word} </div>  
+            {user.def}
+            <h1 className="bg-clo h-1 mt-2 mb-2">_</h1>
+
+            <div className=""><span className="font-bold">Sinonim:</span> {user.sino}</div> 
+            <h1 className="bg-clo h-1 mt-2 mb-2">_</h1>
+
+           <div className=""> <span className="font-bold">Kont: </span>{user.kont}</div> 
           </li>
         ))}
       </ul>
@@ -72,8 +80,9 @@ function Home() {
 
   </div>
 
-<div className="lg:ml-16 lg:mr-16 lg:mt-6 lg:columns-10 bg-neutral-100 shadow-lg inset-shadow-2xs ml-4 mr-4 mt-3 columns-4  "> <ul>
-    <span className="font-bold m-2">Mo disponib:</span>
+<div className="w-150">
+    <h1 className="bg-clo font-bold m-2 lg:ml-15  lg:mt-6 pl-2">Mo disponib:</h1>
+    <ul className="lg:ml-16 lg:columns-5  columns-4 ">
         {word.map((user) => (
         <li key={user.id}>
           <button>
