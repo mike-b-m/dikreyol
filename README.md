@@ -27,7 +27,5 @@ That realization led to the creation of Di-Kreyol. This platform is designed to 
 
 📺 [Watch the Project Demo on YouTube](https://youtu.be/LKhbFx-s3KI)
 
-*(Replace with your actual YouTube video link once it's uploaded)*
-
 ## ⚙️ How to Run the Project
 npm run dev
