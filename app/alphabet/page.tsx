@@ -99,7 +99,7 @@ export default function AlphabetPage() {
           <div className="bg-white rounded-lg shadow p-6">
             <div className="flex items-center justify-between mb-4">
               <h2 className="font-bold text-xl">
-                Mo ki kòmanse ak "{selectedLetter}" ({filteredWords.length})
+                Mo ki kòmanse ak &quot;{selectedLetter}&quot; ({filteredWords.length})
               </h2>
               <button
                 onClick={resetFilter}
@@ -125,7 +125,7 @@ export default function AlphabetPage() {
               </div>
             ) : (
               <p className="text-center text-gray-500">
-                Pa gen mo ki kòmanse ak lèt "{selectedLetter}" nan diksyonè a.
+                Pa gen mo ki kòmanse ak lèt &quot;{selectedLetter}&quot; nan diksyonè a.
               </p>
             )}
           </div>

@@ -19,9 +19,6 @@ type user = {
 function Result() {
   const [word, setWord] = useState<user[]>([])
   const [loding, setLoding] = useState(true)
-  const [num, setNum] = useState(0)
-  const [role, setRole] = useState(20)
-  const [comb, setComb] = useState(1)
   
     const searchpara = useSearchParams();
     const search = searchpara.get('search') || '';
@@ -92,7 +89,7 @@ function Result() {
               </li>
             ))}
           </ul>
-            {/*button next*/}
+            {/*button next - commented out until prev/next functions are implemented
           <div className="text-center italic ">
           {comb-1 > 0 ?<button className="mr-2 hover:text-[#6FE6FC]" onClick={prev}>avan</button>:null}
           {comb-1 > 0 ?(<button className="mr-2 h-6 w-6 rounded-lg border-1 border-sky-200">{comb-1}</button>): null}
@@ -103,6 +100,7 @@ function Result() {
            suivan
           </button>: null}
            </div>
+          */}
         </div>
       </div>
     </div>
